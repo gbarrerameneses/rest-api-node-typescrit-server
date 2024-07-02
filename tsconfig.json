@@ -6,7 +6,27 @@
         "strict": false,
         "sourceMap": true,
         "esModuleInterop": true,
-        "declaration": true
+        "declaration": true,
+        "experimentalDecorators": true,
+        "emitDecoratorMetadata": true,
+        "module": "es2020"
     },
     "include": ["src/**/*.ts"]
-}
+  }
+// {
+//     "compilerOptions": {
+//         "outDir": "./dist",
+//         "rootDir": "./src",
+//         "lib": ["ESNext"],
+//         "strict": false,
+//         "sourceMap": true,
+//         "esModuleInterop": true,
+//         "declaration": true,
+//         "experimentalDecorators": true,
+//         "emitDecoratorMetadata": true
+//          Se modificó module
+//          "module": "ESNext",
+//          "target": "ESNext"
+//     },
+//     "include": ["src/**/*.ts"]
+// }
