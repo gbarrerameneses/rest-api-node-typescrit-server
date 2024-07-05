@@ -1,5 +1,5 @@
 import { Router } from 'express'
-import { createProduct } from './handlers/product'
+import { createProduct } from './handlers/product.js'
 
 const router = Router() // De esta forma vas a tener acceso a todas las funciones del Router de Express
 

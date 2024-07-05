@@ -1,4 +1,4 @@
-import { Table, Column, Model, DataType } from 'sequelize-typescript'
+import { Table, Column, Model, DataType, Default } from 'sequelize-typescript'
 
 // Creación de tablas y columnas
 @Table({
@@ -16,6 +16,7 @@ class Product extends Model {
     })
     price: number
 
+    @Default(true) // va ser para agregarle un valor que no esté presente una vez que enviemos el request, se coloca antes de la columna
     @Column({
         type: DataType.BOOLEAN
     })

@@ -1,7 +1,7 @@
 import express from 'express'
 import colors from 'colors'
-import router from './router'
-import db from './config/db'
+import router from './router.js'
+import db from './config/db.js'
 
 // Conectar a base de datos
 
@@ -18,7 +18,11 @@ async function connectDB() {
 
 connectDB()
 
+// Instancia de express
 const server = express()
+
+// Leer datos de formularios # lectura de json
+server.use(express.json())
 
 server.use('/api/products', router) // método que engloba todos los metodos http, así ejecuta cada verbo
 
